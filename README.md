@@ -1,4 +1,4 @@
-# SheCodesCourse
+# SheCodes Coding for Women
 
 First GitHub repository due to the SheCodes Max course
 
