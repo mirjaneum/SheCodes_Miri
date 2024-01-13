@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
+    <title>Week5 Lesson4</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <section>
@@ -30,15 +31,23 @@
         <!--Today-->
         <div class="grid-today">
           <span class="today-city">
-            <h1>Munich</h1>
+            <h1 id="city-name">Munich</h1>
             <p class="today-city">
               <span id="date-time">Sunday 13:39</span>, sunny
               <br />
               Humidity:
-              <span class="focus-red">88%</span>
+              <span class="focus-red" id="humidity">88%</span>, Wind:<span
+                class="focus-red"
+                id="wind"
+                >1 m/s</span
+              >
             </p>
           </span>
-          <span class="today">☀️ <strong> 2.5</strong><sup>°C</sup></span>
+          <span class="today"
+            ><span id="current-temperature-icon">☀️</span>
+            <strong id="current-temperature-value"> 2.5</strong
+            ><sup>°C</sup></span
+          >
         </div>
 
         <!--Forcast
@@ -84,6 +93,6 @@
       </main>
       <footer>This project was coded by <a href="#">Miri Miessl</a></footer>
     </section>
-    <script src="src/script.js"></script>
+    <script type="text/javascript" src="src/script.js"></script>
   </body>
 </html>
